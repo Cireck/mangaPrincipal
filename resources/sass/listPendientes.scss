@@ -1,0 +1,69 @@
+.pending-items {
+    background: #f8f9fa;
+}
+.pending-item {
+    text-align: center;
+    border-bottom-width: 5px;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+}
+
+.fab, .far {
+    font-weight: 400;
+}
+.fa, .far, .fas {
+    font-family: Font Awesome\ 5 Free;
+}
+.fa-fw {
+    text-align: center;
+    width: 1.25em;
+}
+.fa-2x {
+    font-size: 2em;
+}
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.pending-items >.pending-item > a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+.pending-items > .pending-item > a > span {
+    display: block;
+    color: rgba(0,0,0,.5);
+}
+
+
+.pending-items > .pending-item.watch > a > i {
+    color: #51a351 !important;
+}
+
+.pending-items > .pending-item.pending > a > i {
+    color: #f89406 !important;
+}
+
+.pending-items > .pending-item.follow > a > i {
+    color: #2f96b4 !important;
+}
+
+.pending-items > .pending-item.have > a > i {
+    color: #bd362f !important;
+}
+
+.pending-items > .pending-item.wish > a > i {
+    color: #0e67ef !important;
+}
+
+.pending-items > .pending-item.abandoned > a > i {
+    color: #970047 !important;
+}

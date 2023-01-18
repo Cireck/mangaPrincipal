@@ -14,14 +14,15 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
+            $table->bigIncrements('id');
+            $table->string('role', 15)->default('user');
+            $table->string('email', 100)->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });
+
     }
 
     /**
@@ -31,6 +32,26 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
+        Schema::table('groups', function (Blueprint $table) {
+            $table->dropForeign('groups_user_id_foreign');
+            $table->dropColumn('user_id');
+        });
+        Schema::table('group_user', function (Blueprint $table) {
+            $table->dropForeign('group_user_user_id_foreign');
+            $table->dropColumn('user_id');
+        });
+        Schema::table('manga_user', function (Blueprint $table) {
+            $table->dropForeign('manga_user_user_id_foreign');
+            $table->dropColumn('user_id');
+        });
+        Schema::table('reports', function (Blueprint $table) {
+            $table->dropForeign('reports_user_id_foreign');
+            $table->dropColumn('user_id');
+        });
+        Schema::table('profiles', function (Blueprint $table) {
+            $table->dropForeign('profiles_user_id_foreign');
+            $table->dropColumn('user_id');
+        });
         Schema::dropIfExists('users');
     }
 }

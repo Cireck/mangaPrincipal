@@ -1,1 +1,2 @@
-import 'tw-elements';
+import "bootstrap/dist/js/bootstrap.bundle.min";
+

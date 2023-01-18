@@ -1,0 +1,180 @@
+
+.thumbnail {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    text-shadow: 1px 1px 0 #000;
+    background-size: cover;
+    overflow: hidden;
+    height: 15.5rem;
+    text-decoration: none;
+}
+
+.thumbnail-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 1px;
+    border: 2px solid transparent;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.score {
+    position: absolute;
+    top: 10.8%;
+    right: 0;
+    background: rgba(0, 0, 0, .6);
+    padding: 0 5px;
+    color: #ffdc5e;
+
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.25em;
+    font-size: 80%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 2px;
+}
+
+.type {
+    position: absolute;
+    top: 10%;
+    left: 3px;
+    margin-top: 3px;
+    color: #fff;
+    font-weight: 700;
+    font-size: .85rem;
+    padding: 0 5px 5px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.demography {
+    position: absolute;
+    top: 87%;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    bottom: 0;
+    color: #fff;
+    background-color: hsla(0, 0%, 53%, .75);
+    line-height: 2rem;
+}
+
+//para mostrar los episodes agregados recientemente
+.upload_time {
+    position: absolute;
+    top: 10.7%;
+    right: 0;
+    padding: 0 5px;
+    color: #fff;
+    margin-top: 3px;
+    background: rgba(0, 0, 0, .85);
+}
+
+
+.number {
+    font-weight: 700;
+    font-size: .80rem;
+}
+
+.thumbnail-footer {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px;
+    border: 2px solid transparent;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.uploaded_by {
+    color: #fff;
+    width: 100%;
+}
+
+.groups {
+    width: 100%;
+    font-weight: 700;
+    font-size: .55rem;
+}
+
+.popularity {
+    color: #fff;
+}
+
+.title_episode {
+    display: block;
+    font-size: .5rem;
+}
+
+.gauge.gauge-small {
+    font-size: 17px;
+}
+
+.gauge {
+    position: relative;
+    display: inline-block;
+    font-size: 33px;
+    line-height: 1em;
+    height: 1em;
+    width: 2em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.element.style {
+    transform: rotate(
+            -90deg);
+}
+
+.gauge .gauge-arrow, .gauge .gauge-arrow:before {
+    position: absolute;
+    display: inline-block;
+    background: #a6a6a6;
+    left: 50%;
+    border-radius: 50% 50% 50% 50%/50% 50% 0 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.gauge .gauge-arrow {
+    height: 1em;
+    width: 0.075em;
+    margin-left: -0.05em;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+//barra de dezplamiento inicio
+
+.box {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+//barra de dezplamiento inicio fin
+
