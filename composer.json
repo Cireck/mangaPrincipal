@@ -29,6 +29,14 @@
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
+        ,
+        "files": [
+            "app/helpersEpisode.php",
+            "app/helpersGroup.php",
+            "app/helpersIndex.php",
+            "app/helpersManga.php",
+            "app/helpersProfile.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
@@ -62,4 +70,5 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
+
 }
