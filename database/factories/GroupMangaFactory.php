@@ -18,8 +18,8 @@ class GroupMangaFactory extends Factory
     {
         return [
             'state' => $this->faker->randomElement(['Terminado', 'Abandonado', 'Activo']),
-            'manga_id' => $this->faker->numberBetween(1, Manga::count()),
-            'group_id' => $this->faker->numberBetween(1, Group::count()),
+            'manga_id' => Manga::factory()->create()->id,
+            'group_id' => Group::factory()->create()->id,
         ];
     }
 }

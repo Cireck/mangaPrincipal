@@ -31,11 +31,9 @@
         }
         ,
         "files": [
-            "app/helpersEpisode.php",
-            "app/helpersGroup.php",
-            "app/helpersIndex.php",
-            "app/helpersManga.php",
-            "app/helpersProfile.php"
+
+            "app/helpersIndex.php"
+
         ]
     },
     "autoload-dev": {

@@ -16,7 +16,7 @@ class TitleAlternativeFactory extends Factory
     {
         return [
             'title' => $this->faker->title(),
-            'manga_id' => $this->faker->numberBetween(1, Manga::count()),
+            'manga_id' => Manga::factory()->create()->id,
         ];
     }
 }

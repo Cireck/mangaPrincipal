@@ -18,8 +18,8 @@ class GroupUserFactory extends Factory
         return [
             'role' => $this->faker->randomElement(['lider', 'miembro']),
             'follow' => rand(0, 1),
-            'user_id' => $this->faker->numberBetween(1, User::count()),
-            'group_id' => $this->faker->numberBetween(1, Group::count()),
+            'user_id' => User::factory()->create()->id,
+            'group_id' => Group::factory()->create()->id,
         ];
     }
 }

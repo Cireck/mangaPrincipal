@@ -19,7 +19,7 @@ class ReportFactory extends Factory
         return [
             'type' => $this->faker->randomElement(['Elemento duplicado', 'DMCA', 'Imagen incorrecto', 'Contenido incorrecto', 'Contenido inapropiado', 'Otro']),
             'description' => $this->faker->text(),
-            'user_id' => $this->faker->numberBetween(1, User::count()),
+            'user_id' => User::factory()->create()->id,
             'manga_id' => $this->faker->numberBetween(1, Manga::count()),
             'episode_id' => $this->faker->numberBetween(1, Episode::count()),
         ];

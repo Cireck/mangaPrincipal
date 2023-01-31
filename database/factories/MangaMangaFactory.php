@@ -15,8 +15,8 @@ class MangaMangaFactory extends Factory
     public function definition()
     {
         return [
-            'manga_id_p' => $this->faker->numberBetween(1, Manga::count()),
-            'manga_id_h' => $this->faker->numberBetween(1, Manga::count()),
+            'manga_id_p' => Manga::factory()->create()->id,
+            'manga_id_h' => Manga::factory()->create()->id,
         ];
     }
 }

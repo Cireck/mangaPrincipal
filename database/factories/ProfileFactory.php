@@ -24,7 +24,7 @@ class ProfileFactory extends Factory
             'twitter' => $this->faker->name(),
             'sitio_web' => $this->faker->name(),
             'mode_view' => rand(0, 2),
-            'user_id' => $this->faker->unique()->numberBetween(1, User::count()),
+            'user_id' => User::factory()->create()->id,
             'url' => str_replace(" ", "-", $nick),
         ];
     }

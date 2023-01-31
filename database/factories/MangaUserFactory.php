@@ -19,7 +19,7 @@ class MangaUserFactory extends Factory
             'type' => $this->faker->randomElement(['watch', 'pending', 'follow', 'wish', 'have', 'abandoned']),
             'last_episode' => 0,
             'like' => rand(0, 1),
-            'user_id' => $this->faker->numberBetween(1, User::count()),
+            'user_id' => User::factory()->create()->id,
             'manga_id' => $this->faker->numberBetween(1, Manga::count()),
         ];
     }

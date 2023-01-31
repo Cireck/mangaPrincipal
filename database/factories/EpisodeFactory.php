@@ -20,7 +20,7 @@ class EpisodeFactory extends Factory
             'volumen' => rand(1, 10),
             'view' => rand(1, 10),
             'title' => $this->faker->name(),
-            'manga_id' => $this->faker->numberBetween(1, Manga::count()),
+            'manga_id' => Manga::factory()->create()->id,
         ];
     }
 }

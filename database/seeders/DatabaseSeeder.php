@@ -15,16 +15,16 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
         $this->call([
-            UserSeeder::class,
+            //   UserSeeder::class,
             ProfileSeeder::class,
-            MangaSeeder::class,
-            GroupSeeder::class,
-            EpisodeSeeder::class,
+            // MangaSeeder::class,
+             GroupSeeder::class,
+             EpisodeSeeder::class,
             GenderSeeder::class,
             GroupMangaSeeder::class,
             GroupUserSeeder::class,
-            MangaUserSeeder::class,
-            GenderMangaSeeder::class,
+             MangaUserSeeder::class,
+             GenderMangaSeeder::class,
             EpisodeGroupSeeder::class,
             TitleAlternativeSeeder::class,
             ReportSeeder::class,

@@ -21,9 +21,9 @@ class EpisodeGroupFactory extends Factory
             'link_descarga' => $this->faker->name(),
             'link_apoyo' => $this->faker->name(),
             'date_publication' => $this->faker->dateTime(),
-            'episode_id' => $this->faker->numberBetween(1, Episode::count()),
-            'group_id' => $this->faker->numberBetween(1, Group::count()),
-            'manga_id' => $this->faker->numberBetween(1, Group::count()),
+            'episode_id' => Episode::factory()->create()->id,
+            'group_id' => Group::factory()->create()->id,
+            'manga_id' => Manga::factory()->create()->id,
         ];
     }
 }

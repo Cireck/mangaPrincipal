@@ -15,7 +15,7 @@ class GenderMangaFactory extends Factory
     public function definition()
     {
         return [
-            'manga_id' => $this->faker->numberBetween(1, Manga::count()),
+            'manga_id' => Manga::factory()->create()->id,
             'gender_id' => rand(1, 5),
         ];
     }
