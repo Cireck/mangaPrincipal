@@ -14,7 +14,7 @@ class GenderMangaSeeder extends Seeder
      */
     public function run()
     {
-        GenderManga::factory()->count(20)->create();
+        GenderManga::factory()->count(10)->create();
         /* DB::table('gender_manga')->insert([
     'manga_id' => '1',
     'gender_id' => '1',

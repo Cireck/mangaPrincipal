@@ -16,7 +16,7 @@ class GroupMangaSeeder extends Seeder
      */
     public function run()
     {
-        GroupManga::factory()->count(20)->create();
+        GroupManga::factory()->count(10)->create();
         /* DB::table('group_manga')->insert([
              'group_id' =>  '1',
              'manga_id' =>  '1',

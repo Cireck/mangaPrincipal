@@ -16,7 +16,7 @@ class MangaUserSeeder extends Seeder
      */
     public function run()
     {
-        MangaUser::factory()->count(20)->create();
+        MangaUser::factory()->count(10)->create();
         /*  DB::table('manga_user')->insert([
               'manga_id' =>  '1',
               'user_id' =>  '1',

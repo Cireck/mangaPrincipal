@@ -17,7 +17,7 @@ class EpisodeSeeder extends Seeder
      */
     public function run()
     {
-        Episode::factory()->count(20)->create();
+        Episode::factory()->count(10)->create();
         /* DB::table('episodes')->insert([
              'manga_id' => '1',
              'group_id' => '1',

@@ -28,7 +28,7 @@ class GroupFactory extends Factory
             'discord' => $this->faker->name(),
             'sitio_web' => $this->faker->name(),
             'url' => str_replace(" ", "-", $name),
-            'user_id' => $this->faker->unique()->numberBetween(1, User::count()),
+            'user_id' => $this->faker->numberBetween(1, User::count()),
         ];
     }
 }

@@ -16,7 +16,7 @@ class TitleAlternativeSeeder extends Seeder
      */
     public function run()
     {
-        TitleAlternative::factory()->count(20)->create();
+        TitleAlternative::factory()->count(10)->create();
         /*DB::table('title_alternatives')->insert([
             'manga_id' =>  '1',
             'title' =>  'musachi',

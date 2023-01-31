@@ -14,6 +14,6 @@ class MangaMangaSeeder extends Seeder
      */
     public function run()
     {
-        MangaManga::factory()->count(20)->create();
+        MangaManga::factory()->count(10)->create();
     }
 }

@@ -14,6 +14,6 @@ class EpisodeGroupSeeder extends Seeder
      */
     public function run()
     {
-        EpisodeGroup::factory()->count(20)->create();
+        EpisodeGroup::factory()->count(10)->create();
     }
 }

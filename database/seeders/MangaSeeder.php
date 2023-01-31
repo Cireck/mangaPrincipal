@@ -16,7 +16,7 @@ class MangaSeeder extends Seeder
      */
     public function run()
     {
-        Manga::factory()->count(20)->create();
+        Manga::factory()->count(10)->create();
         /* DB::table('mangas')->insert([
              'name' => $name= 'shinano',
              'sub_name' =>  'yamato',

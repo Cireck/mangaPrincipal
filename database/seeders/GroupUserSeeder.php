@@ -16,7 +16,7 @@ class GroupUserSeeder extends Seeder
      */
     public function run()
     {
-        GroupUser::factory()->count(20)->create();
+        GroupUser::factory()->count(10)->create();
         /*DB::table('group_user')->insert([
             'user_id' =>  '1',
             'group_id' =>  '1',
